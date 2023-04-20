@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "../../HeaderFiles/TUI.h"
+#include "TUI.h"
 #include "Snake.h"
 #include <stdio.h>
 
