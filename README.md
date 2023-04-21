@@ -1,12 +1,41 @@
-# Snake-Game
-This is a simple snake game written in C language. The program uses various C libraries such as stdio.h, conio.h, and time.h for console input/output and adding delay. The program also uses ASCII codes for arrow keys and defines numerical values for each direction.
+# Snake Game
+This project is a simple implementation of the classic Snake Game using the C programming language. It provides the user with the option to customize the game's settings, such as the size of the game board, length and color of the snake, and color of the fruit and game board.
 
-The game board is defined by Height and Width variables and initialized by printing each cell's color based on its contents using printf statements with escape sequences.
+# Dependencies
+This project uses the following dependencies:
 
-The game setup is done by initializing the snake's position array to all -1's and then setting the snake's starting position using the snakeX and snakeY arrays. The fruit's location is also initialized randomly within the game board.
+- stdio.h
+- conio.h
+- stdlib.h
+- time.h
+- TUI.h
+- Snake.h
 
-The GameNotOver function checks whether the game is still ongoing by checking whether the snake has collided with the game board's edges or hit itself. The input function listens for user input from the keyboard using the kbhit function and switch statement to handle arrow key input.
+## Installation
+To install this project, simply clone the repository to your local machine.
 
-The move function updates the position of each segment of the snake's body based on the direction of movement and also checks whether the snake has eaten the fruit. If the snake has eaten the fruit, the PrevTailX and PrevTailY variables store the position of the previous tail. If the snake hasn't eaten the fruit, the flag for fruit being eaten is reset.
+`git clone https://github.com/your-username/Snake-Game.git`
 
-The program is run in a loop until the game is over, where the snake's movement and score are updated each time. Overall, the program is a basic implementation of the classic snake game using C language and console input/output.
+## Usage
+To run the game, navigate to the project directory and compile the Snake_Game_Final.c file using a C compiler.
+
+`gcc Snake_Game_Final.c -o Snake_Game_Final`
+
+Then, run the executable Snake_Game_Final.
+
+## Playing the Game
+If the user chooses to play the game, the game will start with the current settings. The objective is to navigate the snake and eat as many fruits as possible without colliding with the borders of the game board or the snake's own body. The user can control the direction of the snake using the arrow keys.
+
+Once the game is over, the user will be prompted to play again or exit the game.
+
+## Changing Game Settings
+If the user chooses to change the game settings, they will be presented with a menu that includes the following options:
+
+- Snake Length
+- Grid Size
+- Snake Color
+- Fruit Color
+- Border Color
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.
